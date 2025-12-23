@@ -1,17 +1,17 @@
 import "./App.css";
-import ContactForm from "./components/ContactForm/ContactForm";
-import SearchBox from "./components/SearchBox/SearchBox";
-import ContactList from "./components/ContactList/ContactList";
+import AppBar from "./components/AppBar/AppBar";
+
+import Layout from "./components/Layout/Layout";
+import TaskForm from "./components/TaskForm/TaskForm";
+import TaskList from "./components/TaskList/TaskList";
 
 const App = () => {
   return (
-    <div className="container">
-      <h1>Phonebook</h1>
-      <ContactForm />
-      <h2>Contacts</h2>
-      <SearchBox />
-      <ContactList />
-    </div>
+    <Layout>
+      <AppBar />
+      <TaskForm />
+      <TaskList />
+    </Layout>
   );
 };
 export default App;
